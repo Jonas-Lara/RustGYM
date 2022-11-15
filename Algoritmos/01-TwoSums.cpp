@@ -2,17 +2,7 @@
 #include <unordered_map>
 #include <vector>
 
-std::vector<int> twoSum(std::vector<int>& array, int target)
-{
-    std::unordered_map<int, int> map;
-    for (int i = 0; i < array.size(); ++i)
-    {
-        int t = target - array[i];
-        if (map.count(t)) return { map[t], i };
-        map[array[i]] = i;
-    }
-    return {};
-}
+std::vector<int> twoSum(std::vector<int>& array, int target);
 
 int main()
 {
@@ -37,3 +27,16 @@ int main()
 
     std::cin.get();
 }
+
+std::vector<int> twoSum(std::vector<int>& array, int target)
+{
+    std::unordered_map<int, int> map;
+    for (int i = 0; i < array.size(); ++i)
+    {
+        int t = target - array[i];
+        if (map.count(t)) return { map[t], i };
+        map[array[i]] = i;
+    }
+    return {};
+}
+

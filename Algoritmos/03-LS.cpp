@@ -1,26 +1,28 @@
 #include <iostream>
 #include <string>
-#include <vector>
+#include <map>
 
-using namespace std;
-
-int lengthOfLongestSubstring(string s) 
-{
-        int ans = 0, start = -1;
-        vector<int> m(128, -1);
-        for (int i = 0; i < s.size(); ++i) 
-        {
-            start = max(start, m[s[i]]);
-            m[s[i]] = i;
-            ans = max(ans, i - start);
-        }
-        return ans;
-}
+int lengthOfLongestSubstring(std::string s);
 
 int main()
 {
-    string s = "abcabcbb";
-    cout << "Result: "<< lengthOfLongestSubstring(s) << endl;
-    
+    std::string s = "bbbb";
+    std::cout << "Input: '" << s << "'" << std::endl ;
+
+    std::cout << "Output: " << lengthOfLongestSubstring(s) << std::endl;
+
     return 0;
+}
+
+int lengthOfLongestSubstring(std::string s)
+{
+    int ans = 0, start = -1;
+    std::map<int, int> map;
+    for (int i = 0; i < s.size(); ++i)
+    {
+        start = std::max(start, map[s[i]]);
+        map[s[i]] = i;
+        ans = std::max(ans, i - start);
+    }
+    return ans;
 }

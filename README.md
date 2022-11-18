@@ -1,6 +1,6 @@
 ## Soluciones a problemas de LeetCode con C++ explicadas en español
 
-_Te llevo de la mano en los primeros 250 ejercicios de LeetCode usando C++_
+_Te llevo de la mano en los primeros 500 ejercicios de LeetCode usando C++_
 
 | # | Titulo | Solución | Dificultad |
 |---| ----- | -------- | ---------- |

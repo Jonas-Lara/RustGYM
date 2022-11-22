@@ -1,5 +1,5 @@
 #include <iostream>
-#include <unordered_map>
+#include <map>
 #include <vector>
 
 std::vector<int> twoSum(std::vector<int>& array, int target);
@@ -30,7 +30,7 @@ int main()
 
 std::vector<int> twoSum(std::vector<int>& array, int target)
 {
-    std::unordered_map<int, int> map;
+    std::map<int, int> map;
     for (int i = 0; i < array.size(); ++i)
     {
         int t = target - array[i];

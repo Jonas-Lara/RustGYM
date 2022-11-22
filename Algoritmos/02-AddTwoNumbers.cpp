@@ -1,8 +1,4 @@
-//Solutions for LeetCode 02. Add Two Numbers
-
 #include <iostream>
-
-using namespace std;
 
 struct ListNode {
     int val;
@@ -16,11 +12,11 @@ void printList(ListNode* n)
 {
     while (n != NULL)
     {
-        cout << "[" << n->val << "] -> ";
+        std::cout << "[" << n->val << "] -> ";
         n = n->next;
     }
 
-    cout << "NULL";
+    std::cout << "NULL";
 }
 
 ListNode* addTwoNumbers(ListNode* a, ListNode* b) {
@@ -58,9 +54,9 @@ int main()
     l3->val = 3;
     l3->next = NULL;
 
-    cout << "Input: l1 =  " ;
+    std::cout << "Input: l1 =  " ;
     printList(l1);
-    cout << ", ";
+    std::cout << ", ";
 
     //Construir segunda lista enlazada
     ListNode* l4 = new ListNode();
@@ -74,17 +70,17 @@ int main()
     l6->val = 4;
     l6->next = NULL;
 
-    cout << "l2 =  " ;
+    std::cout << "l2 =  " ;
     printList(l4);
-    cout << "\n";
+    std::cout << "\n";
 
     
     ListNode* l7 = addTwoNumbers(l1, l4);
 
-    cout << "Output: ";
+    std::cout << "Output: ";
     printList(l7);
-    cout << "\n";
+    std::cout << "\n";
 
-    cin.get();
+    std::cin.get();
 
 }

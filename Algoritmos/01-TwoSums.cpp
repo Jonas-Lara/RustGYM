@@ -25,7 +25,7 @@ int main()
         std::cout << "[" << result[i] << "]";
     }
 
-    std::cin.get();
+    //std::cin.get();
 }
 
 std::vector<int> twoSum(std::vector<int>& array, int target)

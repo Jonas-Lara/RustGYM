@@ -31,6 +31,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
+.vscode/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -65,6 +66,7 @@ artifacts/
 # Tye
 .tye/
 
+
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
 
@@ -79,6 +81,7 @@ StyleCopReport.xml
 *.meta
 *.obj
 *.exe
+*.json
 *.iobj
 *.pch
 *.pdb

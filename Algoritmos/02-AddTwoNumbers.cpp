@@ -81,6 +81,6 @@ int main()
     printList(l7);
     std::cout << "\n";
 
-    std::cin.get();
+    //std::cin.get();
 
 }

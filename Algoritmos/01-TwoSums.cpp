@@ -24,6 +24,8 @@ int main()
     {
         std::cout << "[" << result[i] << "]";
     }
+    
+    std::cout <<"\n";
 
     //std::cin.get();
 }
